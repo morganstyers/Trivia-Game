@@ -1,28 +1,44 @@
 
 
-var clockRunning = false;
-var countdown = 30;
-$("#ready").on('click', start());
-var IntervalId = setInterval(start, 1000);
 
-function start() {
-   
+
+
+
+  
+  var clockRunning = false;
+  var countdown = 30;
+  var IntervalId;
+
+  $("#ready").on('click', function(){
+    IntervalId= setInterval(start, 1000);
+
+  function start (){
     if (!clockRunning) {
         countdown--;
         var converted = timeConverter(countdown);
-        $(".time-left").text(":"+ countdown);
-
-
+        $(".time-left").text("Time Remaining: " + countdown);
 
         function timeConverter(countdown) {
-            var minutes = Math.floor(countdown / 60);
-            var seconds = countdown - (minutes * 60);
+            
+            var seconds = countdown - (Math.floor(countdown / 60) * 60);
 
-           
-        return seconds;
+
+            return seconds;
+        }
+        if (countdown === 0) {
+            stop();
+
+        }
     }
-}
+    function stop(){
+        clearInterval(IntervalId);
+    }
+    }
+  
+})
+  
 
 
-}   
+
+
 
