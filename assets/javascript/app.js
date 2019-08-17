@@ -1,44 +1,17 @@
-
-
-
-
-
-
+$(document).ready(function(){
   
-  var clockRunning = false;
-  var countdown = 30;
-  var IntervalId;
-
-  $("#ready").on('click', function(){
-    IntervalId= setInterval(start, 1000);
-
-  function start (){
-    if (!clockRunning) {
-        countdown--;
-        var converted = timeConverter(countdown);
-        $(".time-left").text("Time Remaining: " + countdown);
-
-        function timeConverter(countdown) {
-            
-            var seconds = countdown - (Math.floor(countdown / 60) * 60);
-
-
-            return seconds;
-        }
-        if (countdown === 0) {
-            stop();
-
-        }
-    }
-    function stop(){
-        clearInterval(IntervalId);
-    }
-    }
   
-})
-  
+    $("#remaining-time").hide();
+    $("#start").on('click', trivia.startGame);
+    $(document).on('click' , '.option', trivia.answerVal);
+    
+    //var questions
+    //right/wrong/unanswered/timer/timerinfo
+    //questions and answers
+    //correct answers
+    //incorrect answers
+    
+    //start function
 
-
-
-
-
+    //answer validation
+  })
