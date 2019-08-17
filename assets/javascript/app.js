@@ -1,8 +1,11 @@
 $(document).ready(function(){
     $("#remaining-time").hide();
     $("#start").hide();
+    $("p").hide();
     $("#start").slideUp().delay(3000).fadeIn();
     $("#start").on('click', trivia.startGame);
+    
+    
     
 })
 var trivia={
@@ -11,39 +14,34 @@ incorrect:0,
 unanswered: 0,
 timer: 30,
 timerOn: false,
-questions:{
-    question1:"this will be a question",
-    question2:"this will be a question",
-    question3:"this will be a question",
-    question4:"this will be a question",
-    question5:"this will be a question"
-},
-answerChoices:{
-    question1:["answer op","answer op2","answer op3"],
-    question2:["answer op","answer op2","answer op3"],
-    question3:["answer op","answer op2","answer op3"],
-    question4:["answer op","answer op2","answer op3"],
-    question5:["answer op","answer op2","answer op3"]
-},
-correctAnswer:{
-    question1:"answer op 3",
-    question2:"answer op 1",
-    question3:"answer op 2",
-    question4:"answer op 2",
-    question5:"answer op 3",
-},
-
 
 startGame: function(){
     $('#start').hide();
     $("#directions").hide();
-    $('#remaining-time').show();
+    $("#timer").show()
     $("#timer").text("00:"+ trivia.timer);
+
+    var questions=[ "question 1","question 1","question 1","question 1","question 1",];
+    for(var i=0;i<questions.length;i++){
+        var questionNumber= $("p");
+        questionNumber.text(questions[i]);
+        $("#question").append(questionNumber);
+    };
+    questionNumber.show("slow");
+    
+
+},
+
 
     
 }
+    
+    
 
-}
+    
+   
+    
+
 
     //var questions
     //right/wrong/unanswered/timer/timerinfo
