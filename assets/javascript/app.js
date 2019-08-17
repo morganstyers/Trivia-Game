@@ -28,7 +28,7 @@ startGame: function(){
         $("#question").append(questionNumber);
     };
     questionNumber.show("slow");
-    
+    $("#q1").show('slow');
 
 },
 
@@ -36,19 +36,3 @@ startGame: function(){
     
 }
     
-    
-
-    
-   
-    
-
-
-    //var questions
-    //right/wrong/unanswered/timer/timerinfo
-    //questions and answers
-    //correct answers
-    //incorrect answers
-    
-    //start function
-
-    //answer validation
