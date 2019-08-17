@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $("#remaining-time").hide();
     $("#start").hide();
-    $("#start").slideUp().delay(7000).fadeIn();
+    $("#start").slideUp().delay(3000).fadeIn();
     $("#start").on('click', trivia.startGame);
     
 })
@@ -35,8 +35,9 @@ correctAnswer:{
 
 
 startGame: function(){
-    $('#remaining-time').show();
     $('#start').hide();
+    $("#directions").hide();
+    $('#remaining-time').show();
     $("#timer").text("00:"+ trivia.timer);
 
     
