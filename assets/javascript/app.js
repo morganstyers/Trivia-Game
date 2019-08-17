@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $("#remaining-time").hide();
+    $("#game").hide();
     $("#start").on('click', trivia.startGame);
 })
 var trivia={
@@ -35,6 +36,7 @@ startGame: function(){
     $('#remaining-time').show();
     $('#timer').text(trivia.timer);
     $('#start').hide();
+    $('#game').show();
     
 }
 
