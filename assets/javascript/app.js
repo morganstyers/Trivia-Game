@@ -1,7 +1,9 @@
 $(document).ready(function(){
     $("#remaining-time").hide();
-    $("#game").hide();
+    $("#start").hide();
+    $("#start").slideUp().delay(7000).fadeIn();
     $("#start").on('click', trivia.startGame);
+    
 })
 var trivia={
 correct: 0,
@@ -34,9 +36,9 @@ correctAnswer:{
 
 startGame: function(){
     $('#remaining-time').show();
-    $('#timer').text(trivia.timer);
     $('#start').hide();
-    $('#game').show();
+    $("#timer").text("00:"+ trivia.timer);
+
     
 }
 
