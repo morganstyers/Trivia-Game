@@ -2,6 +2,7 @@ $(document).ready(function(){
     $("#remaining-time").hide();
     $("#start").hide();
     $("p").hide();
+    $("#choices").hide();
     $("#start").slideUp().delay(3000).fadeIn();
     $("#start").on('click', trivia.startGame);
     
@@ -27,10 +28,11 @@ startGame: function(){
         questionNumber.text(questions[i]);
         $("#question").prepend(questionNumber);
     };
+    var choices=[]
 
     $('#start').hide();
     $("#directions").hide();
-    questionNumber.show("slow",function(){$("#q1").show('slow');});
+    questionNumber.show("slow",function(){$("#choices").show('slow');});
     $("#remaining-time").delay(1000).show("slow");
     $("#timer").show(slow)("00: ");
     
