@@ -15,14 +15,14 @@ $(document).ready(function () {
         $("#directions").hide();
         $("#game").show();
         $("#remaining-time").delay(1000).show("slow");
-        if(timer === 0){
-            $("#results").show();
-        };
+    
         function countdown() {
             timer--;
             $("#timer").text(timer);
             if (timer === 0) {
                 clearInterval(intervalId);
+                $("#game").hide();
+                $("#results").show();
             }
         }
 
