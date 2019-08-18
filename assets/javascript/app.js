@@ -16,20 +16,17 @@ timer: 30,
 timerOn: false,
 
 startGame: function(){
-    $('#start').hide();
-    $("#directions").hide();
-    $("#timer").show()
-    $("#timer").text("00:"+ trivia.timer);
-
     var questions=[ "question 1","question 1","question 1","question 1","question 1",];
     for(var i=0;i<questions.length;i++){
-        var questionNumber= $("p");
+        var questionNumber= $("h4");
         questionNumber.text(questions[i]);
-        $("#question").append(questionNumber);
+        $("#question").prepend(questionNumber);
     };
-    questionNumber.show("slow");
-    $("#q1").show('slow');
 
+    $('#start').hide();
+    $("#directions").hide();
+    questionNumber.show("slow",function(){$("#q1").show('slow');});
+    $("#remaining-time").append("00:"+ trivia.timer).delay(1000).show("slow");
 },
 
 
