@@ -27,7 +27,7 @@ $(document).ready(function () {
       $("#timer").html(time);
       time--;
       if (time < 0) {
-        clearInterval(setTimer)
+        clearInterval(intervalId)
         $("#game").hide();
         $("#wins").html("Wins: " + winner).show()
         $("#losses").html("Losses: " + loser).show()
