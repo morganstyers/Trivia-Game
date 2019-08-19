@@ -4,12 +4,15 @@ $(document).ready(function () {
     $("#remaining-time").hide();
     $("#start").hide();
     $("#start").slideUp().delay(3000).fadeIn(3000);
-    
+    var winner = 0;
+    var loser = 0;
+    var intervalId;
+    var time = 20;
     $(document).on('click', '#start', function () {
         timerOn = false;
         if (!timerOn) {
-            var intervalId = setInterval(countdown, 1000);
-        $("#timer").html("Time Remaining: " + time);}
+        var intervalId = setInterval(countdown, 1000);}
+        $("#timer").html("Time Remaining: " + time);
        
         
         $('#start').hide();
@@ -17,10 +20,6 @@ $(document).ready(function () {
         $("#game").show();
         $("#remaining-time").delay(1000).show("slow");
     })
-    var time = 20;
-    var winner = 0;
-    var loser = 0;
-    
     
     function countdown() {
       $("#timer").html(time);
