@@ -19,15 +19,10 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="title-text">
-                    <h2>Trivia Game</h2>
+                    <h2>The Office Trivia</h2>
                     <div id="directions">
                         <h4>Here's How To Play:
-                            <h5>Ad proident ea eiusmod aliquip aliquip amet incididunt incididunt ex enim occaecat quis
-                                nostrud. Ea consequat pariatur deserunt nulla tempor eu adipisicing esse fugiat tempor
-                                sunt sunt in. Labore dolore sit ex id occaecat. Nostrud sint incididunt cillum proident
-                                sint. Est proident labore commodo pariatur ut exercitation nostrud pariatur ex dolor non
-                                amet. Aliqua ullamco labore ut occaecat qui id dolore id tempor consectetur incididunt
-                                velit.</p>
+                            <h5>You have twenty seconds to answer trivia correctly.</p>
                             </h5>
                     </div>
                     <h5 id="remaining-time">Time Left: <span id="timer"></span></h5>
@@ -35,76 +30,71 @@
                 </div>
 
                 <div id="game">
-                    <h4 id="first">first question</h4>
+                    <h4 id="first">In S1E1 "Pilot": Who started their first day at Dunder Mifflin Scranton?</h4>
                     <div id="one">
-                      
-                            <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">true</label>
-                                  </div>
-                                  <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">false</label>
-                                  </div>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <input type="radio" name="options" id="jim" autocomplete="off"> Jim Halpert
+
+                            
+
+                            <input type="radio" name="options" id="ryan" autocomplete="off"> Ryan Howard
+
+                            
+
+                            <input type="radio" name="options" id="erin" autocomplete="off"> Erin Hannon
+
+
+                        </div>
+                        <h4 id="second">In S1E2 "Diversity Day": What famous comedian's stand up routine does Michael imitate?</h4>
+                        <div id="two">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <input type="radio" name="options" id="chris" autocomplete="off"> Chris Rock
+                                    <input type="radio" name="options" id="richard" autocomplete="off"> Richard Pryor
+                                    <input type="radio" name="options" id="robin" autocomplete="off"> Robin Williams
+                            </div>
+                        </div>
+                        <h4 id="third">
+                                In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's made up diseases?</h4>
+                        <div id="three">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <input type="radio" name="options" id="hair" autocomplete="off"> hair cancer
+                                    <br>
+                                    <input type="radio" name="options" id="hotdog" autocomplete="off"> hot dog fingers
+                                    <br>
+                                    <input type="radio" name="options" id="dental" autocomplete="off"> spontaneous dental hydroplosion
+                            </div>
+                        </div>
+                        <h4 id="fourth">
+                                In S3E1 "Gay Witch Hunt": What is Andy's nickname for Jim?</h4>
+                        <div id="four">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <input type="radio" name="options" id="halpert" autocomplete="off"> fat halpert
+                                    <input type="radio" name="options" id="jimbo" autocomplete="off"> jimbo
+                                    <input type="radio" name="options" id="tuna" autocomplete="off"> big tuna
+                          </div>
+                        </div>
+                        <h4 id="fifth"> 
+                                In S3E9 "The Convict": Which of these things does Prison Mike NOT claim to have been busted for?</h4>
+                        <div id="five">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <button type="radio" name="options" id="stole" autocomplete="off"> "I stole"</button>
+                                
+                               
+                                    <button type="radio" name="options" id="kidnapped" autocomplete="off"> "I kidnapped the presidents son"</div>
+                                
+                                    <button type="radio" name="options" id="Dumbledore" autocomplete="off"> "I killed Dumbledore"</button>
+                                
+
+                            </div>
+                        </div>
+                        <div id="results">
+                        </div>
                     </div>
-                    <h4 id="second">first question</h4>
-                    <div id="two">
-                       
-                            <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">true</label>
-                                  </div>
-                                  <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">false</label>
-                                  </div>
-                    </div>
-                    <h4 id="third">first question</h4>
-                    <div id="three">
-                      
-                            <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1"> true</label>
-                                  </div>
-                                  <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">false</label>
-                                  </div>
-                    </div>
-                    <h4 id="fourth">first question</h4>
-                    <div id="four">
-                        <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline1">true</label>
-                              </div>
-                              <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline2">false</label>
-                              </div>
-                    </div>
-                    <h4 id="fifth">first question</h4>
-                    <div id="five">
-                     
-                            <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">true</label>
-                                  </div>
-                                  <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">false</label>
-                                  </div>
-                    </div>
-                </div>
-                <div id="results">
-                    <p>right:<p>
-                    <p>wrong:<p>
-                </div>
                 </div>
             </div>
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-        </script>
-        <script type="text/javascript" src="assets/javascript/app.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
+            <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
