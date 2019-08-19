@@ -26,9 +26,10 @@ $(document).ready(function () {
       time--;
       if (time === 0) {
         clearInterval(intervalId)
+        $("#remaining-time").empty();
         $("#game").hide();
-        $("#wins").html("Wins: " + winner).show()
-        $("#losses").html("Losses: " + loser).show()
+        $("#wins").show(winner)
+        $("#losses").show(loser)
       }
     }
 
