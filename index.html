@@ -14,87 +14,33 @@
 
 <body>
 
-    <div class="container">
+    <div id="g" class="container">
 
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="title-text">
-                    <h2>The Office Trivia</h2>
+                    <h2>Trivia</h2>
                     <div id="directions">
                         <h4>Here's How To Play:
                             <h5>You have twenty seconds to answer trivia correctly.</p>
                             </h5>
-                    </div>
-                    <h5 id="remaining-time">Time Left: <span id="timer"></span></h5>
-                    <button id="start" class="btn btn-info btn-lg">Start Game</button>
-                </div>
+                    </div>        <h5 id="remaining-time">Time Left: <span id="timer"></span></h5>
 
-                <div id="game">
-                    <h4 id="first">In S1E1 "Pilot": Who started their first day at Dunder Mifflin Scranton?</h4>
-                    <div id="one">
-                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <input type="radio" name="options" id="jim" autocomplete="off"> Jim Halpert
-
-                            
-
-                            <input type="radio" name="options" id="ryan" autocomplete="off"> Ryan Howard
-
-                            
-
-                            <input type="radio" name="options" id="erin" autocomplete="off"> Erin Hannon
-
-
-                        </div>
-                        <h4 id="second">In S1E2 "Diversity Day": What famous comedian's stand up routine does Michael imitate?</h4>
-                        <div id="two">
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <input type="radio" name="options" id="chris" autocomplete="off"> Chris Rock
-                                    <input type="radio" name="options" id="richard" autocomplete="off"> Richard Pryor
-                                    <input type="radio" name="options" id="robin" autocomplete="off"> Robin Williams
-                            </div>
-                        </div>
-                        <h4 id="third">
-                                In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's made up diseases?</h4>
-                        <div id="three">
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <input type="radio" name="options" id="hair" autocomplete="off"> hair cancer
-                                    <br>
-                                    <input type="radio" name="options" id="hotdog" autocomplete="off"> hot dog fingers
-                                    <br>
-                                    <input type="radio" name="options" id="dental" autocomplete="off"> spontaneous dental hydroplosion
-                            </div>
-                        </div>
-                        <h4 id="fourth">
-                                In S3E1 "Gay Witch Hunt": What is Andy's nickname for Jim?</h4>
-                        <div id="four">
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <input type="radio" name="options" id="halpert" autocomplete="off"> fat halpert
-                                    <input type="radio" name="options" id="jimbo" autocomplete="off"> jimbo
-                                    <input type="radio" name="options" id="tuna" autocomplete="off"> big tuna
-                          </div>
-                        </div>
-                        <h4 id="fifth"> 
-                                In S3E9 "The Convict": Which of these things does Prison Mike NOT claim to have been busted for?</h4>
-                        <div id="five">
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                <button type="radio" name="options" id="stole" autocomplete="off"> "I stole"</button>
-                                
-                               
-                                    <button type="radio" name="options" id="kidnapped" autocomplete="off"> "I kidnapped the presidents son"</div>
-                                
-                                    <button type="radio" name="options" id="Dumbledore" autocomplete="off"> "I killed Dumbledore"</button>
-                                
-
-                            </div>
-                        </div>
-                        <div id="results">
-                        </div>
-                    </div>
+                    <button id="start" class="btn btn-outline-dark btn-lg">Start Game</button>
                 </div>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-            </script>
-            <script type="text/javascript" src="assets/javascript/app.js"></script>
+        </div>
+
+        <div id="game">
+            <div id="trivia">
+                <p id="questions"></p>
+                <p class="buttons"></p>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
